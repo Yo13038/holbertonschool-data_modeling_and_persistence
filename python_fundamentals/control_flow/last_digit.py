@@ -4,7 +4,7 @@ number = __import__('random').randint(-10000, 10000)
 
 # handle negative numbers by taking the absolute value
 if number < 0:
-    digit = (abs(number) % 10)
+    digit = -(abs(number) % 10)
 else:
     digit = number % 10
 
