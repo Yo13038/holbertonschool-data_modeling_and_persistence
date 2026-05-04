@@ -3,7 +3,7 @@ langage = "Python"
 version = 3
 pi = 3.14
 
-print(f"Language: {langage} ")
+print(f"Language: {langage}")
 print(f"Version: {version}")
 print(f"Pi approx: {pi}")
 
