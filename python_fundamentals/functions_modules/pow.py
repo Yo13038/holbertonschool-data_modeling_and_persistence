@@ -13,4 +13,4 @@ def pow(a, b):
     for i in range(b):
         result = result * a
 
-    return result
+    return round(result, 2)
