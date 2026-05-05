@@ -9,7 +9,7 @@ def uppercase(str):
             result += chr(ascii_val - 32)
         else:
             result += i
-    print(result)
+    print("{}".format(result))
 
 
 uppercase("Holberton")
