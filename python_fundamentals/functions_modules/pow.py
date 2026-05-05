@@ -5,7 +5,6 @@ def pow(a, b):
     if b == 0:
         return 1
 
-
     exposant = b if b > 0 else -b
 
     result = 1
@@ -14,6 +13,5 @@ def pow(a, b):
 
     if b < 0:
         return 1 / result
-    
+
     return result
-    
