@@ -7,7 +7,7 @@ def main():
     a = 1
     b = 2
     result = add(a, b)
-    print(result)
+    print("{}".format(result))
 
 
 if __name__ == "__main__":
