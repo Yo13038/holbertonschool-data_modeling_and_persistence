@@ -53,7 +53,7 @@ class Square:
 
         # Rows
         for i in range(self.__size):
-            result += "_" * self.__position[0] + "#" * self.__size
+            result += " " * self.__position[0] + "#" * self.__size
             if i != self.__size - 1:
                 result += "\n"
         return result
