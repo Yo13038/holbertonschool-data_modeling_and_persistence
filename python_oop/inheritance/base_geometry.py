@@ -15,6 +15,6 @@ class BaseGeometry:
         """check if the value is positif"""
 
         if type(value) is not int:
-            raise TypeError("{}must be a integer".format(name))
+            raise TypeError("{}name must be a integer".format(name))
         if value <= 0:
             raise ValueError("{}size must be greater than 0".format(name))
