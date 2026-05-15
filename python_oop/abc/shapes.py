@@ -4,7 +4,7 @@ Module to create an abstract classe name Shape with an abstract method.
 """
 
 from abc import ABC, abstractmethod
-import math  # alowed to have a precise value of pi
+import math  # allowed to have a precise value of pi
 
 
 class Shape(ABC):
@@ -36,10 +36,10 @@ class Circle(Shape):
         self.radius = radius
 
     def area(self):
-        return math.pi * self.radius ** 2
+        return math.pi * abs(self.radius) ** 2
 
     def perimeter(self):
-        return 2 * math.pi * self.radius
+        return 2 * math.pi * abs(self.radius)
 
 
 class Rectangle(Shape):
@@ -52,10 +52,10 @@ class Rectangle(Shape):
         self.height = height
 
     def area(self):
-        return self.width * self.height
+        return abs(self.width * self.height)
 
     def perimeter(self):
-        return 2 * (self.width + self.height)
+        return 2 * abs(self.width + self.height)
 
 
 def shape_info(shape):
