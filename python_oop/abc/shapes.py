@@ -41,8 +41,8 @@ class Circle(Shape):
 
     @radius.setter
     def radius(self, value):
-        if value <= 0:
-            raise ValueError("radius can't be zero or negative")
+        if value < 0:
+            raise ValueError("radius can't benegative")
 
         self._radius = value
 
@@ -68,8 +68,8 @@ class Rectangle(Shape):
 
     @width.setter
     def width(self, value):
-        if value <= 0:
-            raise ValueError("width can't be zero or negative")
+        if value < 0:
+            raise ValueError("width can't negative")
         self._width = value
 
     @property
@@ -78,8 +78,8 @@ class Rectangle(Shape):
 
     @height.setter
     def height(self, value):
-        if value <= 0:
-            raise ValueError("height can't be zero or negative")
+        if value < 0:
+            raise ValueError("height can't be negative")
         self._height = value
 
     def area(self):
