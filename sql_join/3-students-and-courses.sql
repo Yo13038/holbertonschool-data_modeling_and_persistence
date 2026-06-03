@@ -1,0 +1,7 @@
+SELECT students.name as student_name, courses.title as course_title
+FROM students
+INNER JOIN enrollments
+ON students.id = enrollments.student_id
+INNER JOIN courses
+ON enrollments.course_id = courses.id
+ORDER BY student_name ASC, course_title ASC;
